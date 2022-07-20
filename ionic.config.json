@@ -1,0 +1,7 @@
+{
+  "name": "Ticl Attendance",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

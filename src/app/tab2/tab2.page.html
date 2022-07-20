@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="flex">
+      <img src="../../assets/images/logo.png" alt="logo">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-content class="ion-padding">
+      <div class="card-wrapper ion-padding">
+
+
+
+        <ion-card>
+          <ion-card-header>
+             This month
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #doughnutCanvas style="position: relative; height:20vh; width:40vw"></canvas>
+          </ion-card-content>
+        </ion-card>
+        <ion-button class="ion-padding" (click)="scanQRCode()" expand="full">
+          Scan the code
+        </ion-button>
+      </div>
+    </ion-content>
+  </ion-content>
+</ion-content>

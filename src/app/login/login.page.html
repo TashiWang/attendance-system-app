@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-card>
+    <ion-img class="logo" src="assets/images/header.png"></ion-img>
+    <ion-card-content>
+      <h4 class="ion-padding">Login to your account</h4>
+      <div class="wrapform">
+        <ion-item>
+          <ion-icon name="mail"></ion-icon>
+          <ion-input placeholder="Email address" type="email" name="email" [(ngModel)]="inputEmail" required>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="shield-checkmark"></ion-icon>
+          <ion-input placeholder="*************" type="password" name="password" [(ngModel)]="inputPassword"
+            enterkeyhint="go" required></ion-input>
+        </ion-item>
+      </div>
+      <div class="login-btn-wrap">
+        <ion-button shape="round" expand="full" size="large" class="login-btn" (click)="presentLoading()">Log in
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div class="hr-body flex">
+    <hr />
+  </div>
+  <ion-card> </ion-card>
+</ion-content>
